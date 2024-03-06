@@ -108,7 +108,8 @@ nav .navElems #resetBtn{
   place-items: center;
   color: white;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 20px; 
+  cursor: pointer;
 }
 .bubble:hover{
   background-color: red;
