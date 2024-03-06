@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+}
+body{
+  height: 100vh;
+  width: 100%;
+  background-color: #1d1d1d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userInformationPage{
+  box-sizing: content-box;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 2px;
+  width: 20%;
+}
+.userInformationPage h6{
+  color: #D3D3D3;
+}
+.userInformationPage mark{
+  background-color: transparent;
+}
+.userInformationPage h2{
+  margin-bottom: 20px;
+}
+.userInformationPage label{
+ font-size: 15px;
+}
+.userInformationPage input{
+  background-color: #F4F4F6;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 30px;
+  border-radius: 3px;
+  margin: 10px 0px;
+  padding: 0px 10px;
+}
+.userInformationPage button{
+  width: 100%;
+  height: 30px;
+  border-radius: 3px;
+  margin: 20px 0px;
+  border: none;
+  background-color: #1E56FF;
+  color: white;
+}
+
+.container{
+  background-color: #fff;
+  height: 85%;
+  width: 85%;
+  border-radius: 10px;
+  overflow: hidden;
+  display: none;
+}
+nav{
+  height: 60px;
+  width: 100%;
+  background-color: #F4F4F6;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navElems h3{
+  color: #1E56FF;
+}
+
+nav .navElems .box{
+  font-weight: bold;
+  text-align: center;
+}
+nav .navElems #resetBtn{
+  border: none;
+  padding: 5px;
+  background-color: orange;
+  font-weight: bold;
+  color: white;
+  border-radius: 3px;
+}
+.mainContainer{
+  width: 100%;
+  height: calc(100% - 120px);
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+.mainContainer::-webkit-scrollbar {
+  display: none;
+}
+.bubble{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #91995E;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+.bubble:hover{
+  background-color: red;
+  font-size: 30px;
+}
+
+@media (max-width: 700px){
+  .container{
+    width: 95%;
+  }
+  .userInformationPage{
+    width: 80%;
+  }
+}
